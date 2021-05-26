@@ -27,7 +27,6 @@ SELECT pat_no,ward_no FROM patient;
 SELECT  nurse_name,shift FROM nurse;
 --5.Display the name of patients and their physician only for patients assigned to any ward
 SELECT pat_name,phy_fname FROM patient NATURAL JOIN physician;
-SELECT '        ';
 --6.Display the details of all physicians who earn more than 50,000.
 
 SELECT phy_fname,phy_lname,salary FROM physician WHERE salary>50000;
